@@ -3,9 +3,11 @@ export default () => {
     for(let i = 101; i < 1000; i ++) {
         if (i % 10 !== 0) {
             for(let j = i; j < 1000; j ++) {
-                const number = i * j
-                if (isPalindrome(number + "") && number > largestPalindrome) {
-                    largestPalindrome = number
+                if (j % 10 !== 0) {
+                    const number = i * j
+                    if (isPalindrome(number + "") && number > largestPalindrome) {
+                        largestPalindrome = number
+                    }
                 }
             }
         }
