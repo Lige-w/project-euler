@@ -15,7 +15,7 @@ export default (target: number) => {
     return largestPrimeFactor
 }
 
-const isPrime = (number: number) => {
+export const isPrime = (number: number) => {
     const max: number = Math.sqrt(number);
     let factor: number = 2
 

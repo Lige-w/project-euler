@@ -19,6 +19,5 @@ export const getSmallestMultiple = (min: number, max: number): number => {
             currentMin ++
         }
     }
-    console.log(counter)
     return multiple
 }
